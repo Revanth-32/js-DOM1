@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .center {
+            text-align: center;
+        }
+        /* .content {
+            margin-left: 250px;
+            margin-right: 250px;
+        } */
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+        .flex-item {
+            width: 50%;
+        }
+    body{
+        margin-left: 300px;
+        margin-right: 300px;
+        border-left: 2px solid black;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        /* color: #e9ecef; */
+
+
+    }
+    </style>
+</head>
+<body>
+
+    <img src="/P_photo.jpg" alt="" width="100px">
+    <div></div>
+
+    <script>
+        var a = document.createElement("h1");
+        a.innerHTML = "Revanth Reddy"; 
+        a.className = "center";
+        a.style.marginTop = "20px";
+
+        var z = document.createElement("h6");
+        z.innerHTML = "revanthreddy368@gmail.com";
+        z.className = "center";
+        z.style.margin = "0";
+
+        var im = document.getElementsByTagName("img")[0];
+        im.className = "content";
+        im.style.marginLeft = "70%"; 
+        im.style.translate = "0 -60%";
+
+        var c_o = document.createElement("h4");
+        c_o.innerHTML = "Career Objective";
+        c_o.style.textDecoration = "underline"
+        c_o.className = "content";
+        c_o.style.marginTop = "-5%"
+
+        var b = document.createElement("p");
+        b.innerHTML = "Hardworking college student seeking employment. To be a part of an enthusiastic work environment, where I can enhance my knowledge and apply my skills to accomplish organizational goals and to establish a good career in the company.";
+        b.className = "content";
+        b.style.marginTop = "0";
+
+        var hrr = document.createElement("hr");
+        hrr.className = "content";
+        hrr.style.marginTop = "0";
+
+
+        var container = document.createElement("div");
+        container.className = "flex-container";
+
+        var techDiv = document.createElement("div");
+        techDiv.className = "flex-item";
+
+        var t = document.createElement("h3");
+        t.innerHTML = "Technical Skills";
+        t.style.textDecoration = "underline"
+
+        t.className = "content";
+
+
+        var li1 = document.createElement("li");
+        li1.innerHTML = "Java";
+
+        var li2 = document.createElement("li");
+        li2.innerHTML = "Python";
+
+        var li3 = document.createElement("li");
+        li3.innerHTML = "JavaScript";
+
+        var li4 = document.createElement("li");
+        li4.innerHTML = "AWS";
+
+        var li5 = document.createElement("li");
+        li5.innerHTML = "GIT";
+
+        var li6 = document.createElement("li");
+        li6.innerHTML = "React";
+
+        var ull = document.createElement("ul");
+        ull.append(li1, li2, li3, li4, li5, li6);
+        ull.className = "content";
+
+        techDiv.appendChild(t);
+        techDiv.appendChild(ull);
+        
+
+        var hobbyDiv = document.createElement("div");
+        hobbyDiv.className = "flex-item";
+
+        var hh = document.createElement("h3");
+        hh.innerHTML = "Hobbies";
+        hh.className = "content";
+        hh.style.textDecoration = "underline"
+
+
+        var ll1 = document.createElement("li");
+        ll1.innerHTML = "Playing Games";
+
+        var ll2 = document.createElement("li");
+        ll2.innerHTML = "Listening to Music";
+
+        var ll3 = document.createElement("li");
+        ll3.innerHTML = "Watching Movies";
+
+        var ll4 = document.createElement("li");
+        ll4.innerHTML = "Annoying Friends";
+
+        var ll5 = document.createElement("li");
+        ll5.innerHTML = "Reading Books";
+
+        var ulll = document.createElement("ul");
+        ulll.append(ll1, ll2, ll3, ll4, ll5);
+        ulll.className = "content";
+
+        
+        hobbyDiv.appendChild(hh);
+        hobbyDiv.appendChild(ulll);
+
+        container.appendChild(techDiv);
+        container.appendChild(hobbyDiv);
+
+        var hr2 = document.createElement("hr");
+        hr2.className = "content";
+        hr2.style.marginTop = "0";
+
+        var con = document.createElement("h3")
+        con.innerHTML = "Conclusion"
+        con.className = "content"
+        con.style.textDecoration = "underline"
+
+
+        var par2 = document.createElement("p")
+        par2.innerHTML = "As a motivated and eager-to-learn individual, I am excited to bring my fresh perspective and strong foundational skills to your company. I am confident in my ability to contribute effectively to your team, and I am eager to take on new challenges that will allow me to grow both personally and professionally. "
+        par2.className = "content"
+
+        var hr3 = document.createElement("hr");
+        // hr3.className = "content";
+        hr3.style.marginTop = "0";
+
+        var bot = document.createElement("pre")
+        bot.innerHTML = " Revanth Reddy                                            16/08/2024                                  sign:"
+
+        var sigg = document.createElement("img")
+        sigg.src = "sign.jpg"
+        sigg.style.width = "100px"
+        sigg.style.marginLeft = "85%"
+        sigg.style.translate = "0 -100%"
+
+
+        document.body.append(a,z,im,c_o,b,hrr,container,hr2,con,par2,hr3,bot,sigg)
+        
+
+
+        console.log(t);
+        console.log(bot)
+    </script>
+</body>
+</html>
